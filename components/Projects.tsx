@@ -1,34 +1,16 @@
 "use client";
 import React, { useState } from "react";
+import PharmacySolutions from '@/public/projects/pharmasolutions.png'
+import Image from "next/image";
 
 const projects = [
   {
-    title: "E-Commerce Dashboard",
+    title: "Pharmacy Solutions",
     description:
-      "A comprehensive dashboard with real-time analytics, dark mode, and data visualization.",
-    tech: ["React", "Next.js", "Chart.js"],
-    gradient: "linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)",
-  },
-  {
-    title: "Social Media App",
-    description:
-      "A fully functional social platform with real-time chat, notifications, and profile management.",
-    tech: ["React", "Firebase", "Redux"],
-    gradient: "linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)",
-  },
-  {
-    title: "AI Image Generator",
-    description:
-      "An interface for generating images using AI APIs, featuring a sleek, modern UI.",
-    tech: ["React", "Node.js", "OpenAI"],
-    gradient: "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
-  },
-  {
-    title: "Real Estate Platform",
-    description:
-      "A property listing application with map integration, virtual tours, and advanced filtering.",
-    tech: ["React", "Mapbox", "Tailwind"],
-    gradient: "linear-gradient(135deg, #10b981 0%, #3b82f6 100%)",
+      "E-commerce platform for pharmacies with features such as product catalog, order management, and inventory tracking.",
+    tech: ["React", "Next.js"],
+    image: PharmacySolutions,
+    link: "https://pharmasolutionskw.com/en",
   },
 ];
 
@@ -110,7 +92,7 @@ export default function Projects() {
             marginBottom: "3rem",
           }}
         >
-          <h2>Selected Work</h2>
+          <h2>FreeLancing Projects</h2>
           <div style={{ display: "flex", gap: "1rem" }}>
             <button
               onClick={prevSlide}
@@ -150,7 +132,7 @@ export default function Projects() {
         <div
           style={{
             position: "relative",
-            height: "400px",
+            height: "450px",
             perspective: "1000px",
             display: "flex",
             justifyContent: "center",
@@ -218,7 +200,7 @@ export default function Projects() {
                   position: "absolute",
                   width: "100%",
                   maxWidth: "500px",
-                  height: "350px",
+                  height: "450px",
                   transition: "all 0.5s var(--ease-spring)",
                   transform,
                   zIndex,
@@ -230,50 +212,93 @@ export default function Projects() {
               >
                 <div
                   style={{
-                    height: "180px",
-                    background: project.gradient,
+                    position: "relative",
+                    width: "100%",
+                    height: "220px",
                     borderRadius: "0.5rem",
                     marginBottom: "1.5rem",
-                    position: "relative",
+                    overflow: "hidden",
                   }}
-                ></div>
-                <div>
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <div
+                  style={{ flex: 1, display: "flex", flexDirection: "column" }}
+                >
                   <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>
                     {project.title}
                   </h3>
                   <p
                     style={{
                       color: "var(--text-secondary)",
-                      marginBottom: "1.5rem",
+                      marginBottom: "1rem",
                       fontSize: "0.9rem",
                     }}
                   >
                     {project.description}
                   </p>
-                </div>
-                <ul
-                  style={{
-                    display: "flex",
-                    gap: "0.5rem",
-                    listStyle: "none",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  {project.tech.map((t) => (
-                    <li
-                      key={t}
-                      style={{
-                        fontSize: "0.75rem",
-                        color: "var(--text-accent)",
-                        background: "rgba(56, 189, 248, 0.1)",
-                        padding: "0.2rem 0.6rem",
-                        borderRadius: "12px",
-                      }}
+
+                  <ul
+                    style={{
+                      display: "flex",
+                      gap: "0.5rem",
+                      listStyle: "none",
+                      flexWrap: "wrap",
+                      marginBottom: "1.5rem",
+                    }}
+                  >
+                    {project.tech.map((t) => (
+                      <li
+                        key={t}
+                        style={{
+                          fontSize: "0.75rem",
+                          color: "var(--text-accent)",
+                          background: "rgba(56, 189, 248, 0.1)",
+                          padding: "0.2rem 0.6rem",
+                          borderRadius: "12px",
+                        }}
+                      >
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      marginTop: "auto",
+                      color: "var(--brand-primary)",
+                      fontWeight: 600,
+                      fontSize: "0.9rem",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                      textDecoration: "none",
+                    }}
+                  >
+                    View Project
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
-                      {t}
-                    </li>
-                  ))}
-                </ul>
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
               </div>
             );
           })}

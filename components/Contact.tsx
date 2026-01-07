@@ -16,7 +16,7 @@ export default function Contact() {
             marginBottom: "1rem",
           }}
         >
-          04. What's Next?
+      What's Next?
         </p>
         <h2 style={{ fontSize: "3rem", marginBottom: "2rem" }}>Get In Touch</h2>
         <p
@@ -31,7 +31,7 @@ export default function Contact() {
           to get back to you!
         </p>
         <a
-          href="mailto:hossam@example.com"
+          href="mailto:hossam.m.elsheikh@gmail.com"
           className="glass-card"
           style={{
             display: "inline-block",

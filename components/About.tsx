@@ -22,12 +22,14 @@ export default function About() {
             className="glass-card"
             style={{
               padding: "0",
+              width: "70%",
               overflow: "hidden",
               transform: "rotate(-3deg)",
+              margin: "0 auto",
             }}
           >
             <img
-              src="/profile-avatar.png"
+              src="/pic.png"
               alt="Hossam Mohamed Avatar"
               style={{ width: "100%", height: "auto", display: "block" }}
             />
