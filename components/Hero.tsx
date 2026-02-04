@@ -56,7 +56,7 @@ export default function Hero() {
             fontSize: "1.1rem",
           }}
         >
-          I'm a Frontend React Developer specialized in creating beautiful,
+          I'm a Full Stack Web Developer specialized in creating beautiful,
           functional, and lively web applications.
         </p>
 

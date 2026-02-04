@@ -44,14 +44,9 @@ export default function About() {
               fontSize: "1.1rem",
             }}
           >
-            Hello! My name is Hossam Elsheikh, and I’m a 28-year-old software
-            engineer . As a dedicated self-learner, I’ve followed the path of
-            computer science through the Open Source Community University (OSCU)
-            . After obtaining ITI certificate in web development using MERN
-            stack, I've specialized in building modern and efficient web
-            applications using the MERN stack (MongoDB, Express.js, React, and
-            Node.js), combining my passion for technology with hands-on
-            experience to deliver high-quality solutions.
+            Hello! My name is Hossam Elsheikh, and I’m a 28-year-old software engineer. I’m a dedicated self-learner who has followed a computer science–oriented learning path through the Open Source Community University (OSCU). I also hold an ITI certificate in web development.
+
+I specialize in building modern, efficient, and scalable web applications, combining solid software engineering principles with hands-on experience. I’m passionate about continuous learning and enjoy transforming ideas into reliable, high-quality digital solutions.
           </p>
         
           <p

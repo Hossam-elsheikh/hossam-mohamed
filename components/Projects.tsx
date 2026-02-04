@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import PharmacySolutions from '@/public/projects/pharmasolutions.png'
+import PharmacySolutions from '@/public/projects/ph-solutions.gif'
 import Image from "next/image";
-
+import Cashlab from '@/public/projects/cashlab.gif';
+import BeautyCenter from '@/public/projects/beauty-center.gif';
 const projects = [
   {
     title: "Pharmacy Solutions",
@@ -11,6 +12,22 @@ const projects = [
     tech: ["React", "Next.js"],
     image: PharmacySolutions,
     link: "https://pharmasolutionskw.com/en",
+  },
+  {
+    title: "ChasLab",
+    description:
+      "Chaslab is a Rewarding Chasback points based platform, enabling patient to download their reports and get rewards",
+    tech: ["React", "Next.js"],
+    image: Cashlab,
+    link: "https://lap-bonus.vercel.app/ar/",
+  },
+  {
+    title: "Beauty-center Landing Page",
+    description:
+      "Beauty-center is a landing page for a beauty center",
+    tech: ["React", "Next.js"],
+    image: BeautyCenter,
+    link: "https://beauty-center-v7ys.vercel.app/",
   },
 ];
 

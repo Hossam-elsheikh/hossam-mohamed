@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hossam Mohamed | Frontend React Developer",
+  title: "Hossam Mohamed | Fullstack Developer",
   description:
-    "Portfolio of Hossam Mohamed, a Frontend React Developer building unique and lively web experiences.",
+    "Portfolio of Hossam Mohamed, a Fullstack Developer building unique and lively web experiences.",
 };
 
 export default function RootLayout({

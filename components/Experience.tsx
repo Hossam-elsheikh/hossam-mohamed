@@ -4,23 +4,23 @@ import React from "react";
 const experiences = [
   {
     company: "Nojeed Software Solutions",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     period: "2025 - Present",
     description:
       "Developing scalable web applications using Next.js and React. ",
     website: "https://www.nojeed.me/en",
     linkedin: "https://www.linkedin.com/company/106983437",
-    skills: ["React", "Next.js", "TypeScript", "GraphQL"],
+    skills: ["React", "Next.js", "TypeScript", "GraphQL","Node.js","Express.js","PostgreSQL","Nest.js"],
   },
   {
     company: "Robone",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     period: "2024 - 2025",
     description:
       "Collaborated with designers to deliver pixel-perfect websites for high-profile clients. Specialized in complex animations and interactive UIs.",
     website: "https://www.robonero.com/",
     linkedin: "https://www.linkedin.com/company/robone-eg",
-    skills: ["React", "GSAP", "Sass", "Webpack"],
+    skills: ["React", "GSAP", "Sass", "Webpack","Node.js","Express.js","PostgreSQL","Nest.js"],
   }
  
 ];
