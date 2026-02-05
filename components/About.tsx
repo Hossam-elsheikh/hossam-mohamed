@@ -44,11 +44,23 @@ export default function About() {
               fontSize: "1.1rem",
             }}
           >
-            Hello! My name is Hossam Elsheikh, and I’m a 28-year-old software engineer. I’m a dedicated self-learner who has followed a computer science–oriented learning path through the Open Source Community University (OSCU). I also hold an ITI certificate in web development.
-
-I specialize in building modern, efficient, and scalable web applications, combining solid software engineering principles with hands-on experience. I’m passionate about continuous learning and enjoy transforming ideas into reliable, high-quality digital solutions.
+            Hello! My name is Hossam Elsheikh, and I am a software engineer with
+            a non-traditional career background. I began my professional journey
+            in the pharmaceutical field, where I developed a strong sense of
+            responsibility, attention to detail, and problem-solving skills.
+            Over time, I discovered a deeper interest in technology and software
+            development, which led me to pursue a career transition. To build a
+            solid foundation, I followed a structured computer science learning
+            path through the Open Source Community University (OSCU) and later
+            obtained an ITI certificate in web development. Through continuous
+            learning and hands-on project work, I developed the skills needed to
+            design and build modern, efficient, and scalable web applications.
+            Today, I work as a software engineer focused on delivering
+            high-quality digital solutions, combining a strong engineering
+            mindset with a commitment to continuous improvement and professional
+            growth.
           </p>
-        
+
           <p
             style={{
               color: "var(--text-secondary)",
